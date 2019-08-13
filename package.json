@@ -1,0 +1,17 @@
+{
+  "name": "learn-pug",
+  "version": "1.0.0",
+  "description": "pug测试",
+  "main": "index.js",
+  "scripts": {
+    "html": "node src/html2Pug.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "html2jade": "^0.8.6"
+  }
+}

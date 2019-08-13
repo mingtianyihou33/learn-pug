@@ -1,0 +1,30 @@
+doctype xml
+.main
+    span hello word
+input(type='checkbox' checked)
+|
+|
+input(type='checkbox' checked=true)
+|
+|
+input(type='checkbox' checked=false)
+|
+|
+input(type='checkbox' checked=true.toString())
+
+a(style={color: 'red', background: 'green'})
+a(style="color:red;background:green")
+//- class设置
+- let classes = ['foo', 'bar', 'baz']
+a(class=classes)
+|
+|
+//- the class attribute may also be repeated to merge arrays
+a.bang(class=classes class=['bing'])
+
+
+- var attributes = {};
+- attributes.class = 'baz';
+div#foo(data-bar="foo")&attributes(attributes)
+- let name = "zhangsan"
+div #{name}
